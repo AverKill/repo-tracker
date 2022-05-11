@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import RepoDetails from "./RepoDetails";
@@ -10,6 +10,11 @@ function App() {
   const [repos, setRepos] = useState([]);
   const [details, setDetails] = useState({});
   const [detailsLoading, setDetailsLoading] = useState(false);
+
+  useEffect(() => {
+    setRepos([]);
+    setDetails({}); 
+  }, [username]);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -39,7 +44,7 @@ function App() {
     setDetailsLoading(true);
     axios({
       method: "get",
-      url: `https://api.github.com/repos${username}/${repoName}`,
+      url: `https://api.github.com/repos/${username}/${repoName}`,
     }).then((res) => {
       setDetailsLoading(false);
       setDetails(res.data);
