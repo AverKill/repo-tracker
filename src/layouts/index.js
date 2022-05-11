@@ -6,15 +6,17 @@ const Layout = () => {
     <>
       <header>
         <h1>
-          <span>
-            <i class="fa fa-github"></i>
-          </span>
-          {"   "}
+          <span className="logo">
+            <i class="fa-brands fa-github"></i>
+          </span>{" "}
+          {"  "}
           GitHub Repo Tracker
         </h1>
       </header>
       <Outlet />
-      <footer>By David Quigley, Doreen Kamushinda & Robyn Shortland</footer>
+      <footer>
+        By David Quigley, Doreen Kamushinda & Robyn Shortland © 2022
+      </footer>
     </>
   );
 };
