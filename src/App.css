@@ -62,8 +62,9 @@ footer {
   width: 50px;
 }
 
-.results-container {
-  border-top-color: #484f58;
+.repo-name:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 button span {
