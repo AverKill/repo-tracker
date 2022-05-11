@@ -3,8 +3,8 @@ import React from "react";
 function RepoDetails({ details, loading }) {
   if (loading) {
     return <h1 className="loader">Loading...</h1>;
-  }
-  return (
+  } else {
+    return (
     <div className="repo-details-container">
       <div className="details-row">
         <label className="label">Name: </label>
@@ -23,7 +23,7 @@ function RepoDetails({ details, loading }) {
         <span className="value">{details.stargazers_count}</span>
       </div>
     </div>
-  );
+  )};
 }
 
 export default RepoDetails;
