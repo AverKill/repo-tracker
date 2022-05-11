@@ -1,4 +1,8 @@
+import React, { useState } from "react";
+import { useEffect } from "react";
+
 import React, { useState, useEffect } from "react";
+
 import axios from "axios";
 
 import RepoDetails from "./RepoDetails";
@@ -13,7 +17,7 @@ function App() {
 
   useEffect(() => {
     setRepos([]);
-    setDetails({}); 
+    setDetails({});
   }, [username]);
 
   function handleSubmit(e) {
