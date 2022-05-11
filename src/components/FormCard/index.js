@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import RepoDetails from "./RepoDetails";
-import "./App.css";
+import RepoDetails from "../RepoDetails";
 
 function FormCard() {
   const [username, setUsername] = useState("");
@@ -61,7 +60,15 @@ function FormCard() {
               onChange={(e) => setUsername(e.target.value)}
             />
             <button className="button" onClick={handleSubmit}>
-              {loading ? "Searching..." : "Search"}
+              {loading ? (
+                <span>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              ) : (
+                <span>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              )}
             </button>
           </form>
           <div className="results-container">{repos.map(renderRepo)}</div>
