@@ -1,141 +1,20 @@
-/* body {
-  margin: 0;
-  padding: 0;
-}
-
-.page {
-  height: 100vh;
-}
-
-.landing-page-container {
-  height: 100%;
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  background-color: #282d35;
-  overflow-y: scroll;
-  padding: 30px;
-}
-
-.left-side {
-  height: 100%;
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid salmon;
-}
-
-.form {
-  width: 100%;
-  height: 40px;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #21262d;
+  color: #388bfd;
   display: flex;
   justify-content: center;
-  margin-top: 15px;
 }
 
-.input {
-  width: 100%;
-  height: 40px;
-  border: none;
-  border-radius: 6px;
-  font-size: 18px;
-  padding-left: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
-  color: salmon;
-}
-
-.input:focus {
-  border: 1px solid salmon;
-  outline: none;
-}
-
-.input::placeholder {
-  color: #282d35;
-}
-
-.button {
-  height: 100%;
-  width: 50%;
-  background-color: salmon;
-  border-radius: 5px;
-  border: none;
-  font-size: 18px;
-  color: #282d35;
-  box-sizing: content-box;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.button:focus {
-  outline: none;
+.form input {
+  background-color: #484f58;
+  padding: 5px 12px;
+  margin: 50px;
 }
 
 .results-container {
-  margin-top: 10px;
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border-top-color: #484f58;
 }
-
-.row {
-  display: flex;
-  cursor: pointer;
-  width: 44%;
-  height: 45px;
-  margin-top: 10px;
-  background-color: transparent;
-  border-radius: 5px;
-  align-items: center;
-  justify-content: flex-start;
-  pointer-events: none;
-}
-
-.row > h2 {
-  color: salmon;
-  pointer-events: auto;
-}
-
-.row:hover {
-  background-color: salmon;
-}
-
-.row > h2:hover {
-  color: #282d35;
-}
-
-.repo-name {
-  margin-left: 5px;
-}
-
-.repo-details-container {
-  height: 100%;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.details-row {
-  height: 20px;
-  width: 70%;
-  display: flex;
-  margin-top: 25px;
-  align-items: center;
-}
-
-.label {
-  font-weight: bold;
-  margin-right: 20px;
-  color: #696c71;
-}
-
-.value {
-  color: salmon;
-}
-
-.loader {
-  color: salmon;
-  margin-left: 5%;
-} */
