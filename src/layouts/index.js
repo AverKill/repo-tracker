@@ -17,10 +17,6 @@ const Layout = () => {
           </span>{" "}
           GitHub Repo Tracker
         </h1>
-        <p>
-          This app enables you to search and retrieve GitHub users' repositories
-          and stats!
-        </p>
         <nav>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
