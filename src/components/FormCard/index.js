@@ -17,7 +17,6 @@ function FormCard() {
   function handleSubmit(e) {
     e.preventDefault();
     searchRepos();
-    setUsername("");
   }
 
   function searchRepos() {
