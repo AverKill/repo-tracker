@@ -17,7 +17,7 @@ function FormCard() {
   function handleSubmit(e) {
     e.preventDefault();
     searchRepos();
-    return <h1 className="repo-name">{username}'s Repositories:</h1>;
+    setUsername("");
   }
 
   function searchRepos() {
