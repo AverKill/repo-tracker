@@ -7,12 +7,12 @@ function RepoDetails({ details, loading }) {
     return (
       <div className="repo-details-container">
         <div className="details-row">
-          <label className="label">Name: </label>
+          <label className="label">Repository Name: </label>
           <span className="value">{details.name}</span>
         </div>
         <div className="details-row">
           <label className="label">Fork Count: </label>
-          <span className="value">{details.forks}</span>
+          <span className="value">{details.forks_count}</span>
         </div>
         <div className="details-row">
           <label className="label">Language: </label>

@@ -18,7 +18,6 @@ body {
   height: 20px;
 }
 
-
 header {
   background-color: var(--primary-grey);
   padding: 10px;
@@ -26,7 +25,6 @@ header {
   color: white;
   font-size: 30px;
 }
-
 
 header h1 {
   color: var(--light-text);
@@ -65,20 +63,21 @@ footer a:hover {
   text-decoration: none;
 }
 
-.landing-page-container  {
+.landing-page-container {
   display: flex;
   justify-content: center;
 }
 
-.form{
+.form {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .form .input {
   background-color: var(--body-color);
   color: var(--darkest-grey);
-  font-size: 20px;
+  font-size: 17px;
   height: 50px;
   width: 350px;
   border: 2px solid var(--primary-grey);
@@ -91,11 +90,13 @@ footer a:hover {
 .form .button {
   background-color: var(--darkest-grey);
   color: white;
-  height: 63px;
-  width: 50px;
+  height: 65px;
+  width: 70px;
   border: 1px solid var(--primary-grey);
-  margin-right: 30px;
+  margin-right: 20px;
   border-radius: 5px;
+  position: relative;
+  top: 49px;
 }
 
 .form .button:hover {
@@ -120,12 +121,12 @@ footer a:hover {
 .repo-name:hover {
   cursor: pointer;
   text-decoration: underline;
+  color: var(--github-blue);
 }
 
 button span {
   width: 50%;
 }
-
 
 .repo-details-container {
   color: var(--github-blue);
@@ -133,7 +134,7 @@ button span {
 
 nav a {
   color: var(--github-blue);
-  padding: 3px;
+  padding: 10px;
   font-size: 20px;
   text-decoration: none;
 }
@@ -146,12 +147,31 @@ nav button {
   color: var(--darkest-grey);
   border: 1px solid var(--primary-grey);
   border-radius: 5px;
-  font-size: 17px;
+  font-size: 19px;
+  font-weight: 600;
   position: relative;
-  left: 10px;
+  width: 70px;
 }
 
 nav button:hover {
   color: var(--github-blue);
   cursor: pointer;
+}
+
+.stats-section {
+  text-align: center;
+}
+
+.about-section h1 {
+  text-align: center;
+}
+
+.about-section {
+  background-color: var(--body-color);
+  color: var(--primary-grey);
+  margin: auto;
+  margin-top: 100px;
+  padding: 10px;
+  width: 80%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }

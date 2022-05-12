@@ -1,8 +1,13 @@
 import React from "react";
-import { Outlet, NavLink } from "react-router-dom";
-
+import { Outlet, NavLink, useNavigate } from "react-router-dom";
 
 const Layout = () => {
+  let navigate = useNavigate();
+
+  const goToPreviousPath = () => {
+    navigate(-1);
+  };
+
   return (
     <>
       <header>
@@ -12,17 +17,20 @@ const Layout = () => {
           </span>{" "}
           GitHub Repo Tracker
         </h1>
-        <p>This app enables you to search and retrieve GitHub users' repositories and stats!</p>
+        <p>
+          This app enables you to search and retrieve GitHub users' repositories
+          and stats!
+        </p>
         <nav>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
-          <button>Back</button>
-
+          <button onClick={goToPreviousPath}>Back</button>
         </nav>
       </header>
       <Outlet />
       <footer>
-        By <a href="url">David Quigley</a>, <a href="url">Doreen Kamushinda</a>, & <a href="url">Robyn Shortland</a> © 2022
+        By <a href="url">David Quigley</a>, <a href="url">Doreen Kamushinda</a>,
+        & <a href="url">Robyn Shortland</a> © 2022
       </footer>
     </>
   );
