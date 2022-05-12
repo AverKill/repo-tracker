@@ -59,7 +59,8 @@ function FormCard() {
               placeholder="Enter a GitHub username..."
               onChange={(e) => setUsername(e.target.value)}
             />
-            <button className="button" onClick={handleSubmit}>
+            <button className="button" onClick={handleSubmit}><i class="fa fa-search"></i></button>
+            {/* <button className="button" onClick={handleSubmit}>
               {loading ? (
                 <span>
                   <i class="fa-solid fa-magnifying-glass"></i>
@@ -69,7 +70,10 @@ function FormCard() {
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </span>
               )}
-            </button>
+            </button> */}
+
+
+
           </form>
           <div className="results-container">{repos.map(renderRepo)}</div>
           <RepoDetails details={details} loading={detailsLoading} />

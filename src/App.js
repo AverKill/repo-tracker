@@ -11,6 +11,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<Pages.IndexPage />} />
+        <Route path="/about" element={<Pages.AboutPage />} />
         <Route path="*" element={<Pages.NotFoundPage />} />
       </Route>
     </Routes>
