@@ -1,6 +1,6 @@
 import React from "react";
 
-function RepoDetails({ details, loading }) {
+function RepoDetails({ details, loading, username }) {
   if (loading) {
     return <h1 className="loader">Loading...</h1>;
   } else {

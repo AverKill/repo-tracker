@@ -17,6 +17,7 @@ function FormCard() {
   function handleSubmit(e) {
     e.preventDefault();
     searchRepos();
+    return <h1 className="repo-name">{username}'s Repositories:</h1>;
   }
 
   function searchRepos() {
@@ -67,7 +68,8 @@ function FormCard() {
             <div className="stats-section">
               <RepoDetails details={details} loading={detailsLoading} />
             </div>
-            {repos.map(renderRepo)}
+
+            <div className="listed-repos">{repos.map(renderRepo)}</div>
           </div>
         </div>
       </div>

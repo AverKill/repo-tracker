@@ -31,6 +31,7 @@ header h1 {
   font-size: 35px;
   font-weight: 400;
   text-align: center;
+  cursor: pointer;
 }
 
 header p {
@@ -130,6 +131,7 @@ button span {
 
 .repo-details-container {
   color: var(--github-blue);
+  text-align: center;
 }
 
 nav a {
@@ -156,10 +158,6 @@ nav button {
 nav button:hover {
   color: var(--github-blue);
   cursor: pointer;
-}
-
-.stats-section {
-  text-align: center;
 }
 
 .about-section h1 {
