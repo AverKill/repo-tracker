@@ -3,6 +3,8 @@ An app that utilises the GitHub API and enables users to search and retrieve Git
 
 ### Available Scripts
 In the project directory, you can run:
+#### `npm install`
+This installs the node modules needed to run the app.\
 
 #### `npm run dev`
 Runs the app in the development mode.\
