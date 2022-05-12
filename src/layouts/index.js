@@ -29,8 +29,9 @@ const Layout = () => {
       </header>
       <Outlet />
       <footer>
-        By <a href="url">David Quigley</a>, <a href="url">Doreen Kamushinda</a>,
-        & <a href="url">Robyn Shortland</a> © 2022
+        By <a href="https://github.com/AverKill/">David Quigley</a>,{" "}
+        <a href="https://github.com/doreenkam/">Doreen Kamushinda</a>, &{" "}
+        <a href="https://github.com/rsho-create/">Robyn Shortland</a> © 2022
       </footer>
     </>
   );
